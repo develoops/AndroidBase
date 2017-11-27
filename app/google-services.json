@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "712456314512",
+    "firebase_url": "https://otro-proyecto-4484e.firebaseio.com",
+    "project_id": "otro-proyecto-4484e",
+    "storage_bucket": "otro-proyecto-4484e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712456314512:android:31d0e72be780685a",
+        "android_client_info": {
+          "package_name": "mc.sms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712456314512-u1cl1pnvl8vpvbn8jj4rrbuvdk8vvmg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYYkptTVNYp91TxkWv8mHp3ZY7tod0d0M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

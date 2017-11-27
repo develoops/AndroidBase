@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:id="@+id/frame">
+
+    <RelativeLayout
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="2dp"
+        android:background="#FFFFFF"
+        android:gravity="top">
+
+        <com.parse.ParseImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/icon_event"
+
+            android:layout_marginLeft="3dp" />
+
+        <imageTreatment.RoundedImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/icon_speaker"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" />
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon_event"
+            android:id="@+id/info"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false"
+            android:gravity="top">
+
+            <TextView
+                android:id="@+id/name_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:textSize="15dip"
+                android:textStyle="bold"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/date_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="12dip"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/name_event"
+                android:visibility="gone"
+
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="12dip"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/date_event"
+
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/eventPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="12dip"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/time"
+
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/eventSpeakers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="12dip"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/eventPlace"
+
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/fav"
+                android:padding="1dp"
+                android:background="@color/companySecundario"
+                android:visibility="invisible"
+
+
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

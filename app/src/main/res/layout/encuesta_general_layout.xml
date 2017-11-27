@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:text="Gracias por contestar la encuesta."
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/header0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/textHeader0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:text="Tu evaluación debe ser de 1 a 5, en donde 1 es totalmente en desacuerdo y 5 totalmente de acuerdo"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="visible"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:text="XLIX CURSO ANUAL AMERICAN COLLEGE OF PHYSICIANS"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="visible"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <include android:id="@+id/seccion1" layout="@layout/seccion_encuesta" />
+
+
+    <RelativeLayout
+        android:id="@+id/header2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/header"
+        android:layout_height="wrap_content"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+
+        >
+
+        <TextView
+            android:id="@+id/textHeader2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:text="En relación a otros aspectos:"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="visible"
+            />
+
+
+
+    </RelativeLayout>
+
+    <include android:id="@+id/seccion2" layout="@layout/seccion_encuesta" />
+    <include android:id="@+id/seccion3" layout="@layout/seccion_encuesta" />
+    <include android:id="@+id/seccion4" layout="@layout/seccion_encuesta" />
+    <include android:id="@+id/seccion5" layout="@layout/seccion_encuesta" />
+    <include android:id="@+id/seccion6" layout="@layout/seccion_encuesta" />
+
+    <RelativeLayout
+        android:id="@+id/header3"
+        android:layout_width="match_parent"
+        android:layout_below="@id/header"
+        android:layout_height="wrap_content"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+
+        >
+
+        <TextView
+            android:id="@+id/textHeader3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:text="Recomendación"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="visible"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header4"
+        android:layout_width="match_parent"
+        android:layout_below="@id/header"
+        android:layout_height="wrap_content"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+
+        >
+
+        <TextView
+            android:id="@+id/textHeader4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="visible"
+            />
+
+        <EditText
+            android:id="@+id/editTextEncuesta"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textHeader4"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:hint="(si o no)"
+            android:textSize="20sp"
+            android:visibility="visible"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendButton"
+        android:layout_centerHorizontal="true"
+        android:text="enviar"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:visibility="visible"
+        />
+
+
+</LinearLayout>
+</ScrollView>

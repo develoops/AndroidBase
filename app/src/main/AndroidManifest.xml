@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mc.sms" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <permission android:name="mc.sms.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="mc.sms.permission.C2D_MESSAGE" />
+    <uses-feature android:name="android.hardware.telephony"  android:required="false" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="mc.sms.myApp"
+        >
+        <activity
+            android:name="mc.sms.MainActivity"
+
+            android:alwaysRetainTaskState="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <data android:scheme="mailto" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+
+
+        </activity>
+
+
+
+
+
+
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParsePushBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!--
+                  IMPORTANT: Change "com.parse.tutorials.pushnotifications" to match your app's package name.
+                -->
+                <category android:name="mc.sms" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="utils.Receiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="mc.sms.ServicioAlarma"
+            android:enabled="true" />
+
+        <receiver android:name="mc.sms.BroadcastAlarma" />
+
+        <meta-data android:name="com.parse.push.gcm_sender_id"
+            android:value="id:712456314512" />;
+
+        <meta-data android:name="com.parse.push.notification_icon" android:resource="@drawable/ic_launcher"/>
+    </application>
+
+</manifest>

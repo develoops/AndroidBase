@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <com.parse.ParseImageView
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:scaleType="fitXY"
+        />
+
+    <!--        android:src="@drawable/splash_expomeet_02_1136_1024" -->
+    <ImageView
+        android:id="@+id/splash_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/sms2017"
+        android:visibility="gone"
+        />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+           />
+
+
+</RelativeLayout>

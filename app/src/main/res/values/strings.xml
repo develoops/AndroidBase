@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SMS 2017</string>
+    <string name="start">Cargando..</string>
+    <string name="action_settings">Configuración</string>
+    <string name="rate">Evaluacion Enviada</string>
+    <string name="finished">Evento Finalizado</string>
+    <string name="not_finished">Evento está por comenzar</string>
+    <string name="alarm">Alarma seteada</string>
+    <string name="alarm_cancel">Alarma cancelada</string>
+    <string name="Rate">Evaluar</string>
+    <string name="google_project_number">712456314512</string>
+ <string name="cancelled">Evento Favorito cancelado</string>
+
+</resources>

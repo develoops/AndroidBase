@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:onClick="clickEvent"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/directory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/directorio"
+        android:background="@android:color/transparent"
+
+        />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/search"
+        android:src="@drawable/search"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/news"
+        android:src="@drawable/news"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/now"
+        android:layout_toStartOf="@+id/now"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/now"
+        android:src="@drawable/emm"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

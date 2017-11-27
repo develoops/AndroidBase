@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:id="@+id/content_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dip"
+        android:background="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp">
+
+        <ProgressBar
+            android:id="@+id/progressBarIcon"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+
+            />
+        <com.parse.ParseImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon"
+            android:text="Este es un texto de prueba"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_below="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/icon"
+            android:layout_height="wrap_content"
+            android:text="Este es un texto de prueba"
+            android:textSize="13dip"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_below="@+id/date"
+            android:layout_toRightOf="@id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Este es un texto de prueba"
+            android:textSize="13dip"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

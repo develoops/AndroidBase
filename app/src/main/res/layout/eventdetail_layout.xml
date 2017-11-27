@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#eeeeee">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/firstRl"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/event_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            />
+
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            class="com.parse.ParseImageView"
+            android:id="@+id/header"
+            android:scaleType="fitXY"
+            android:layout_below="@id/event_detail_toolbar"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/commonListView"
+            android:listSelector="#00000000"
+            android:divider="#eeeeee"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/header"
+            />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/speakers_list_view"
+            android:layout_below="@id/commonListView"
+            android:listSelector="#00000000"
+            android:divider="#eeeeee"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <ListView
+            android:id="@+id/filesListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:listSelector="#00000000"
+            android:divider="#000"
+            android:dividerHeight="1dip"
+            android:layout_below="@+id/speakers_list_view"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filesListView"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:scrollbars="vertical"
+            />
+
+
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/events_list_view"
+            android:layout_below="@+id/content"
+            android:listSelector="#00000000"
+            android:divider="#fff"
+            android:dividerHeight="1dip"
+            android:visibility="visible"
+            />
+
+        <Button
+
+            android:visibility="gone"
+            android:layout_width="768dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/resumenes"
+            android:layout_below="@+id/events_list_view"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/eventoTerciario"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center"
+            android:text="Ver Resumenes"
+            android:shadowColor="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"/>
+
+        <RelativeLayout android:id="@+id/footer"
+            android:layout_width="fill_parent" android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_height="44dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/makefavourite"
+                    android:text="Hacer favorito"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"/>
+
+
+                <Button
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Encuesta"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:id="@+id/ask"
+                    android:text="Preguntas"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"/>
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:id="@+id/map"
+                    android:text="Mapa"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

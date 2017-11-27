@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dip"
+        android:background="#ffffff"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/fav"
+            />
+
+        <utils.CircularTextView
+            android:id="@+id/circularTextView"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/blanco"
+            android:layout_toLeftOf="@+id/fav"
+            />
+
+
+        <TextView
+            android:id="@+id/name_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#343434"
+            android:typeface="sans"
+            android:textSize="15dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="45dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="10dip"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/name_question"
+            android:layout_alignParentLeft="true"
+
+
+
+            />
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="12dip"
+            android:paddingLeft="20dip"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_below="@+id/user"
+            android:visibility="invisible"
+            />
+
+      <!--  <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="12dip"
+            android:paddingLeft="20dip"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/charge"
+
+            />-->
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

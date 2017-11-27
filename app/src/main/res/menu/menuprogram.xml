@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/search"
+        app:showAsAction="always"
+        android:icon="@drawable/search"
+        android:title="@string/action_settings"
+        android:tint="@color/eventSecundario"
+        android:actionViewClass="android.widget.SearchView"/>
+
+
+    <item
+        android:id="@+id/news"
+        app:showAsAction="always"
+        android:icon="@drawable/news"
+        android:tint="@color/eventSecundario"
+        android:title="@string/action_settings"/>
+
+    <item
+        android:id="@+id/now"
+        app:showAsAction="always"
+        android:checkable="true"
+        android:icon="@drawable/emm"
+        android:tint="@color/eventSecundario"
+        android:title="@string/action_settings"/>
+
+
+</menu>
